@@ -1,0 +1,28 @@
+name: Yeni Konu Önerisi
+description: Müfredata yeni bir konu veya modül eklemek için öneride bulunun.
+title: "[ÖNERİ]: "
+labels: ["enhancement", "content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Müfredatı geliştirdiğiniz için teşekkürler! Lütfen önerinizi aşağıda detaylandırın.
+  - type: input
+    id: module_name
+    attributes:
+      label: Modül Adı
+      placeholder: "Örn: Modül 3 veya Yeni Modül"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Öneri Detayı
+      placeholder: "Eklemek istediğiniz konunun teorik ve uygulama detaylarını yazın."
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Akademik Kaynaklar
+      placeholder: "Önerinizi destekleyen akademik makale veya kitap referanslarını ekleyin."
